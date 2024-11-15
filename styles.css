@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+M {
+    top: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+.M:hover {
+    animation-name: transform;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transform {
+    100% {transform: rotate(90deg, 90deg);}
+}
