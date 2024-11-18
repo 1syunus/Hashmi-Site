@@ -1,23 +1,52 @@
 body {
-    background-color: black;
+margin: 0;
+padding: 0;
+display: flex;
+min-height: 100vh;
 }
 
-M {
-    top: 0;
-    right: 0;
-    transform: translate(50%, 50%);
-    width: 100px;
-    height: 100px;
-    background-color: aliceblue;
+.container {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    width: 100vw;
 }
 
-.M:hover {
-    animation-name: transform;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+.logo-bg {
+    flex: 1;
+    background-image: url("images/background-Hashmi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-@keyframes transform {
-    100% {transform: rotate(90deg, 90deg);}
+.content {
+    display: flex;
+    flex: 1;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    
+}
+
+h1 span {
+    font-size: 5rem;
+}
+.socials {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1em;
+    width: 24px;
+    background-color: aqua;
+    color: black;
+
 }
